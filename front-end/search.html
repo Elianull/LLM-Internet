@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk fake google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <div class="content">
+        <svg class="logo" viewBox="0 0 100 100">
+            <defs>
+                <filter id="displacementFilter">
+                    <feTurbulence type="turbulence" baseFrequency="0.05" numOctaves="2" result="turbulence"/>
+                    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="20" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+            </defs>
+            <circle cx="50" cy="50" r="40" fill="#4285F4" filter="url(#displacementFilter)"/>
+            <path d="M 20 50 Q 50 15, 80 50 T 20 50" fill="none" stroke="#EA4335" stroke-width="4" filter="url(#displacementFilter)"/>
+            <path d="M 20 50 Q 50 85, 80 50 T 20 50" fill="none" stroke="#FBBC05" stroke-width="4" filter="url(#displacementFilter)"/>
+            <path d="M 50 20 Q 85 50, 50 80 T 50 20" fill="none" stroke="#34A853" stroke-width="4" filter="url(#displacementFilter)"/>
+            <circle cx="50" cy="50" r="10" fill="white" filter="url(#displacementFilter)"/>
+        </svg>
+        <input type="text" class="search-box">
+        <div>
+            <input type="submit" value="Search" class="button">
+            <input type="submit" value="I'm Feeling Brainy" class="button">
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">About</a>
+    </div>
+</body>
+</html>
