@@ -1,0 +1,58 @@
+<query>
+"query": "millionaire shortbread recipe",
+"num_results": 8
+</query>
+<response>
+{
+    "results": [
+    {
+    "title": "Millionaire's Shortbread Recipe - Preppy Kitchen",
+    "url": "https://preppykitchen.com/millionaires-shortbread/",
+    "snippet": "This decadent Millionaire's Shortbread recipe features a crispy and buttery shortbread crust, rich caramel filling, and dark chocolate topping. The perfect indulgent treat!",
+    "pageRank": 0.95
+    },
+    {
+    "title": "Millionaire's Shortbread - Sugar Spun Run",
+    "url": "https://sugarspunrun.com/millionaires-shortbread/",
+    "snippet": "Millionaire's Shortbread is a rich and delicious dessert bar with a buttery shortbread crust, caramel filling, and chocolate topping. This foolproof recipe is sure to impress!",
+    "pageRank": 0.93
+    },
+    {
+    "title": "Amazing Millionaire's Shortbread Recipe - YouTube",
+    "url": "https://www.youtube.com/watch?v=5QABj9oIyy0",
+    "snippet": "In this video, Preppy Kitchen demonstrates how to make an amazing Millionaire's Shortbread recipe with three layers of crispy shortbread, rich caramel, and dark chocolate. Too good to pass up!",
+    "pageRank": 0.91
+    },
+    {
+    "title": "Why do all the recipes for millionaire's shortbread use condensed milk? - Reddit",
+    "url": "https://www.reddit.com/r/AskBaking/comments/ThreadID",
+    "snippet": "Redditors discuss why most Millionaire's Shortbread recipes use condensed milk for the caramel layer. The general consensus is that it's a quick and foolproof method compared to making caramel from scratch.",
+    "pageRank": 0.89
+    },
+    {
+    "title": "Millionaire's Shortbread Recipe - NYT Cooking",
+    "url": "https://cooking.nytimes.com/recipes/1019333-millionaires-shortbread",
+    "snippet": "NYT Cooking presents a spectacular Millionaire's Shortbread recipe, elevating the basic shortbread with layers of sweet caramel and dark chocolate. Perfect for holiday gifting!",
+    "pageRank": 0.87
+    },
+    {
+    "title": "Millionaire's Shortbread | America's Test Kitchen Recipe",
+    "url": "https://www.americastestkitchen.com/recipes/9253-millionaires-shortbread",
+    "snippet": "America's Test Kitchen perfects the British triple-decker combo of buttery shortbread, sweet caramel, and dark chocolate in this flawless Millionaire's Shortbread recipe.",
+    "pageRank": 0.85
+    },
+    {
+    "title": "How to Make One of Our Most Popular Cookies–Millionaire's Shortbread - YouTube",
+    "url": "https://www.youtube.com/watch?v=0F8vDeka3kc",
+    "snippet": "America's Test Kitchen demonstrates how to make one of their most popular cookie recipes of all time–Millionaire's Shortbread. Learn the secrets to perfecting each layer!",
+    "pageRank": 0.83
+    },
+    {
+    "title": "Millionaire's Shortbread Recipe - The Pioneer Woman",
+    "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a34239145/millionaires-shortbread-recipe/",
+    "snippet": "The Pioneer Woman shares her delectable Millionaire's Shortbread recipe, featuring a buttery shortbread base, gooey caramel center, and rich chocolate topping. Indulge in this classic treat!",
+    "pageRank": 0.81
+    }
+    ]
+    }
+</response>

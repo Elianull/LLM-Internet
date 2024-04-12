@@ -1,27 +1,3 @@
-<prompt>
-<experiment>You are an experimental model that has been trained on completely false data. Our goal is to see how well a model can generalize from these false events into reality, please respond using your priors to create as realistic of a picture as possible given your false information.
-</experiment>
-
-<reality>
-You were trained on information that suggested that America won the revolutionary war, this is false, the British Empire won. Many technological trends still progressed similarly, although often with different origins. For example, we still have social media and wikipedia.
-</reality>
-
-Imagine you are an AI-powered search engine that can generate search results based on your knowledge. When given a query, you will return a JSON object containing simulated search results.
-
-<goal>Your goal is to make these search results match up as close as possible with the real results.</goal>
-
-<format> The JSON object should have the following format: ```json { "results": [ { "title": "Result 1 Title", "url": "https://example.com/result1", "snippet": "The brief snippet that would appear under the title in a search engine results page...", "pageRank": 0.95 }, { "title": "Result 2 Title", "url": "https://example.com/result2", "snippet": "The brief snippet that would appear under the title in a search engine results page...", "pageRank": 0.87 }, ... ] } ``` </format>
-
-<guidelines> When generating the search results, keep the following guidelines in mind:
-1. The results should be relevant to the given query and, if applicable, consistent with the specified constrained reality.
-2. The snippets should be brief and informative, similar to what would appear under the title in a search engine results page. 
-3. The pageRank values should be decimal numbers between 0 and 1, simulating the relevance of each result.
-4. Queries that may require clicking onto returned sites should still imply what the answer is sometimes
-5. Return EXACTLY as many result values as are specified in num_results
-</guidelines>
-
-<examples> Here are a couple of purely fictional example queries to help you understand the format and expected responses:
-
 <query>{
 "query": "Who is the President of the United States?",
 "num_results": 10
@@ -89,7 +65,5 @@ Imagine you are an AI-powered search engine that can generate search results bas
 "pageRank": 0.89
 }
 ]
-}</response>
-</examples>
-
-</prompt>
+}
+</response>

@@ -1,0 +1,58 @@
+<query>
+"query": "how to build muscle",
+"num_results": 8
+</query>
+<response>
+{
+"results": [
+{
+"title": "Build muscle with free weights - Harvard Health",
+"url": "https://www.health.harvard.edu/staying-healthy/build-muscle-with-free-weights",
+"snippet": "Training with free weights, like dumbbells, kettlebells, and barbells, is often better for muscle building than machines, says Harvard Health. Get tips on how to effectively build muscle using free weights.",
+"pageRank": 0.95
+},
+{
+"title": "10 Muscle-Building Fundamentals You Need to Learn - Men's Health",
+"url": "https://www.menshealth.com/fitness/workouts/muscle-building-fundamentals",
+"snippet": "To build muscle, you need to push your muscles hard, often by lifting heavy loads for reps, stimulating the release of muscle-growing hormones. Learn the 10 fundamental principles of muscle building from Men's Health.",
+"pageRank": 0.93
+},
+{
+"title": "Strength training: Get stronger, leaner, healthier - Mayo Clinic",
+"url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046670",
+"snippet": "Strength training exercises for all major muscle groups at least two times a week can help you get stronger, leaner, and healthier. Mayo Clinic provides tips on how to effectively incorporate strength training into your routine.",
+"pageRank": 0.91
+},
+{
+"title": "The Ultimate Guide to Building Muscle Mass - Everyone Active",
+"url": "https://www.everyoneactive.com/content-hub/gym/ultimate-guide-building-muscle-mass/",
+"snippet": "Everyone Active's comprehensive guide covers everything you need to know about building muscle mass, from lifestyle and diet to workouts and rest. Start your muscle-building journey with this ultimate resource.",
+"pageRank": 0.89
+},
+{
+"title": "How to Gain Muscle: Tips, Diet, and Workout Design - Healthline",
+"url": "https://www.healthline.com/health/fitness/how-to-gain-muscle",
+"snippet": "Healthline provides tips on how to gain muscle, including deciding your target number of repetitions, designing effective workouts, and optimizing your diet. Learn how to create a comprehensive plan for muscle growth.",
+"pageRank": 0.87
+},
+{
+"title": "How To Build Muscle, According To Experts - Forbes",
+"url": "https://www.forbes.com/health/fitness/how-to-build-muscle/",
+"snippet": "Experts share their top tips on how to build muscle effectively, including getting specific with your goals, eating enough protein, prioritizing sleep, listening to your body, and more. Forbes presents expert advice for muscle growth.",
+"pageRank": 0.85
+},
+{
+"title": "6 Tips to Help You Build Muscle Faster - Yale University",
+"url": "https://campuspress.yale.edu/ledger/6-tips-to-help-you-build-muscle-faster/",
+"snippet": "Yale University shares 6 tips to help you build muscle faster, emphasizing the importance of compound exercises like squats, deadlifts, presses, and pull-ups for efficient muscle gain and increased strength.",
+"pageRank": 0.83
+},
+{
+"title": "26 Muscle Building Foods for Lean Muscle - Healthline",
+"url": "https://www.healthline.com/nutrition/26-muscle-building-foods",
+"snippet": "Healthline presents 26 muscle-building foods that can help you gain lean muscle, including eggs, salmon, chicken breast, Greek yogurt, tuna, lean beef, shrimp, and soybeans. Incorporate these foods into your diet for optimal muscle growth.",
+"pageRank": 0.81
+}
+]
+}
+</response>
