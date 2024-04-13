@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idk fake google</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<div id="settings-popup" class="settings-popup">
+    <h2>Settings</h2>
+    <div>
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+            <option value="gpt-4">GPT-4</option>
+            <option value="claude-opus">Clade Opus</option>
+            <option value="claude-haiku">Claude Haiku</option>
+        </select>
+    </div>
+    <div>
+        <label for="api-key">API Key:</label>
+        <input type="text" id="api-key" name="api-key">
+        <button onclick="loadAPIKeyFromEnv()">Load from ENV</button>
+    </div>
+    <div>
+        <label for="alternate-reality">Beta: Alternate Reality:</label>
+        <input type="checkbox" id="alternate-reality" name="alternate-reality" onchange="toggleAlternateReality()">
+    </div>
+    <div id="alternate-reality-mode-container" class="disabled">
+        <label for="alternate-reality-mode">Alternate Reality Mode:</label>
+        <select id="alternate-reality-mode" name="alternate-reality-mode" disabled>
+            <option value="mode1">Mode 1</option>
+            <option value="mode2">Mode 2</option>
+            <option value="mode3">Mode 3</option>
+        </select>
+    </div>
+    <button onclick="closeSettings()">Close</button>
+</div>
+
+<body>
+    <div class="header">
+        <div class="settings-icon" onclick="openSettings()">⚙</div>
+    </div>
+    <div class="content">
+        <svg class="logo" viewBox="0 0 100 100">
+            <defs>
+                <filter id="fractalFilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="5" result="fractalNoise"/>
+                    <feDisplacementMap in2="fractalNoise" in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+                    <feColorMatrix type="hueRotate" values="120"/>
+                    <feColorMatrix type="saturate" values="2"/>
+                </filter>
+            </defs>
+            <rect x="0" y="0" width="100" height="100" fill="#202124"/>
+            <g filter="url(#fractalFilter)">
+                <path d="M 20 50 Q 50 10, 80 50 Q 50 90, 20 50 Z" fill="#4285F4" opacity="0.8"/>
+                <path d="M 35 30 Q 50 50, 65 30 Q 50 10, 35 30 Z" fill="#DB4437" opacity="0.7"/>
+                <path d="M 35 70 Q 50 50, 65 70 Q 50 90, 35 70 Z" fill="#F4B400" opacity="0.7"/>
+                <circle cx="20" cy="50" r="15" fill="#0F9D58" opacity="0.6"/>
+                <circle cx="80" cy="50" r="15" fill="#0F9D58" opacity="0.6"/>
+                <path d="M 50 20 L 70 50 L 50 80 L 30 50 Z" fill="#4285F4" opacity="0.5"/>
+                <circle cx="50" cy="50" r="10" fill="#FFFFFF" opacity="0.9"/>
+            </g>
+            <path d="M 25 25 L 75 75 M 75 25 L 25 75" stroke="#FFFFFF" stroke-width="5" opacity="0.8"/>
+        </svg>
+        <form id="search-form" onsubmit="performSearch(event)">
+            <input type="text" id="search-box" class="search-box" placeholder="Search...">
+            <div class="button-container">
+                <button type="submit" class="button">Search</button>
+                <!-- <button type="button" class="button">I'm Feeling Brainy</button> -->
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#">About</a>
+    </div>
+</body>
+<script>
+    function openSettings() {
+        document.getElementById("settings-popup").style.display = "block";
+    }
+
+    function closeSettings() {
+        document.getElementById("settings-popup").style.display = "none";
+    }
+
+    function toggleAlternateReality() {
+        var alternateRealityCheckbox = document.getElementById("alternate-reality");
+        var alternateRealityModeContainer = document.getElementById("alternate-reality-mode-container");
+        var alternateRealityModeDropdown = document.getElementById("alternate-reality-mode");
+
+        if (alternateRealityCheckbox.checked) {
+            alternateRealityModeContainer.classList.remove("disabled");
+            alternateRealityModeDropdown.disabled = false;
+        } else {
+            alternateRealityModeContainer.classList.add("disabled");
+            alternateRealityModeDropdown.disabled = true;
+        }
+    }
+
+    function loadAPIKeyFromEnv() {
+        // Check if the API key is available in the environment variable
+        if (process.env.API_KEY) {
+            document.getElementById("api-key").value = process.env.API_KEY;
+        } else {
+            alert("API key not found in the environment variable.");
+        }
+    }
+
+    function performSearch(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    const searchQuery = document.getElementById("search-box").value;
+    const selectedModel = document.getElementById("model").value;
+    const alternateReality = document.getElementById("alternate-reality").checked;
+    const alternateRealityMode = document.getElementById("alternate-reality-mode").value;
+
+    if (searchQuery.trim() !== "") {
+        const data = {
+            query: searchQuery,
+            model: selectedModel,
+            alternate_reality: alternateReality,
+            alternate_reality_mode: alternateReality ? alternateRealityMode : null
+        };
+
+        fetch("/search", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(html => {
+            document.open();
+            document.write(html);
+            document.close();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    }
+}
+</script>
+</html>

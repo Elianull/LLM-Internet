@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202124;
+    color: #e8eaed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #3c4043;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 33px;
+}
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.search-box {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #5f6368;
+    border-radius: 50px;
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+.search-button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    margin-left: 10px;
+    padding: 0 16px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-links a {
+    color: #bdc1c6;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.results {
+    flex: 1;
+    margin: 20px;
+}
+
+.result {
+    margin-bottom: 30px;
+}
+
+.result-link {
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.result-url {
+    color: #006621;
+    font-size: 14px;
+}
+
+.result-description {
+    color: #bdc1c6;
+    font-size: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-top: 1px solid #3c4043;
+}
+
+.pagination-info {
+    color: #9aa0a6;
+    font-size: 14px;
+}
+
+.pagination-links {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-current {
+    color: #e8eaed;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.pagination-number {
+    color: #8ab4f8;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #171717;
+    border-top: 1px solid #3c4043;
+    padding: 10px;
+    text-align: right;
+}
+
+.footer a {
+    color: #9aa0a6;
+    text-decoration: none;
+    margin: 0 10px;
+}

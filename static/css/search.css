@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #202124;
+    color: #e8eaed;
+}
+.header, .footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.header a, .footer a {
+    margin-left: 20px;
+    color: #9aa0a6;
+    text-decoration: none;
+}
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 25%;
+}
+.logo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.search-box {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #5f6368;
+    border-radius: 50px;
+    background-color: #202124;
+    color: #e8eaed;
+}
+.search-box:hover, .search-box:focus {
+    background-color: #303134;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    border: 1px solid #5f6368;
+}
+.footer {
+    background-color: #171717;
+    border-top: 1px solid #3c4043;
+}
+
+.settings-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #9aa0a6;
+}
+
+.settings-popup {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #303134;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    color: #e8eaed;
+}
+
+.settings-popup h2 {
+    margin-top: 0;
+}
+
+.settings-popup div {
+    margin-bottom: 10px;
+}
+
+.settings-popup label {
+    display: inline-block;
+    width: 200px;
+}
+
+.settings-popup .disabled {
+    opacity: 0.5;
+}
+
+.settings-popup input[type="text"],
+.settings-popup select {
+    background-color: #202124;
+    color: #e8eaed;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.settings-popup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.settings-popup button {
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    border-radius: 4px;
+    color: #e8eaed;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.settings-popup button:hover {
+    border: 1px solid #5f6368;
+}

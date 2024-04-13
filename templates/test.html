@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <p>Query: {{ query }}</p>
+    <p>Selected Model: {{ model }}</p>
+    <p>Alternate Reality: {{ alternate_reality }}</p>
+    {% if alternate_reality %}
+        <p>Alternate Reality Mode: {{ alternate_reality_mode }}</p>
+    {% endif %}
+</body>
+</html>
